@@ -1,0 +1,26 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Body from '../components/Body.astro';
+
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<Body />
+		<main>
+			<h1>🐈‍⬛ Hey there!</h1>
+			<p>
+				Welcome to the official Vanakatu game webpage. Game about a time travelling cat!
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>

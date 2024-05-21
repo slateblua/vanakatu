@@ -1,0 +1,60 @@
+---
+import Steam from "./Steam.astro";
+import YouTubeComponent from "./YouTubeComponent.astro";
+---
+
+<div class='body'>
+    <div class="steamWrapper">
+        <Steam />
+    </div>
+    <div class="heroWrapper">
+        <img src='/vanakatu/parallax/landscape.png' alt='landscape' class="background">
+        <div class="holder">
+            <img src='/vanakatu/holder.png' alt='holder' class="background">
+            <YouTubeComponent></YouTubeComponent>
+        </div>
+    </div>
+</div>
+
+<style>
+    .watch {
+		color: #554e4e;
+		border-radius: 20px;
+		display: flex;
+		align-items: center;
+		width: fit-content;
+        text-decoration: solid;
+		margin: auto;
+		font-size: 1em;
+        text-transform: uppercase;
+		font-family: 'Roboto Mono Variable', monospace;
+    }
+    .background {
+        position: relative;
+        z-index: 2;
+        pointer-events: none;
+    }
+    .heroWrapper {
+        position: relative;
+    }
+    .holder {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        margin: 0 auto;
+        z-index: 1;
+    }
+
+    .steamWrapper {
+        padding-top: 5%
+    }
+
+    @media screen and (max-width: 500px) {
+        .parent {
+            width: 100%;
+        }
+    }
+</style>
+

@@ -1,0 +1,19 @@
+---
+import { YouTube } from "astro-embed";
+---
+
+<div class="youtube-wrapper">
+    <YouTube id="https://www.youtube.com/watch?v=jrtysiCs5q0" poster="/vanakatu/start_screen.png"></YouTube>
+</div>
+
+<style>
+    .youtube-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 60%;
+        z-index: 3;
+    }
+</style>

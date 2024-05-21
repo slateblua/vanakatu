@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="About Me"
+	description="About me"
+	pubDate={new Date('May 20 2024')}
+	heroImage="/vanakatu/pretty.png"
+>
+	<div class="paragraph">
+		<p>
+			Briefly spoken, I am a Computer Science student at the American University of Armenia, 
+			but I’m also learning game development and painting little pictures in my free time.
+			One of the things that give me the most joy is the power of creation, and game 
+			 development is the perfect tool for me to blend visual art, storytelling, ambiance and 
+			viewer interaction all in one. I’ve travelling to almost all of the continents and learned 
+			a lot from each country, but now that I’m back in Armenia I want to infuse the culture 
+			here into my works!	
+		</p>
+	</div>
+
+	<div class="anna">
+		<img src='/vanakatu/parallax/anna.png' alt='holder'>
+	</div>
+
+</Layout>
+
+<style>
+	.anna :hover {
+		box-shadow: 0 0 16px 0 #8ed62944;
+		scale: 110%;
+	}
+	p::first-letter {
+    	padding-left: 2em; /* Adjust the value (em, px) for your indent */
+  	}
+</style>
